@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l77-Ud-h6O">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutomatedTesting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066" y="126"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="Ipz-1K-107">
+            <objects>
+                <viewController id="l77-Ud-h6O" customClass="RegistrationViewController" customModule="AutomatedTesting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QVM-Yh-TgI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kub-Fy-eBX">
+                                <rect key="frame" x="10" y="30" width="355" height="201.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3bJ-ko-9bo">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="60.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9K-Xb-kJn">
+                                                <rect key="frame" x="0.0" y="0.0" width="41" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bpr-XU-tg0">
+                                                <rect key="frame" x="0.0" y="30.5" width="300" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="emailTextField"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="Nqv-IW-7kR"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XZS-Ey-V6c">
+                                        <rect key="frame" x="0.0" y="70.5" width="300" height="60.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHB-fO-ofl">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIw-G2-7WS">
+                                                <rect key="frame" x="0.0" y="30.5" width="300" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="passwordTextField"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="OKV-nk-ErO"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DA6-yM-m4Q">
+                                        <rect key="frame" x="0.0" y="141" width="300" height="60.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhA-Yq-LKa">
+                                                <rect key="frame" x="0.0" y="0.0" width="139.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vSw-kj-wtd">
+                                                <rect key="frame" x="0.0" y="30.5" width="300" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="confirmpassword"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="Nzx-0i-Pnd"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkE-vi-R18">
+                                <rect key="frame" x="159" y="366" width="57" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qao-bR-Y0v"/>
+                                </constraints>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerButtonPressed:" destination="l77-Ud-h6O" eventType="touchUpInside" id="gjQ-pw-l7r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kub-Fy-eBX" firstAttribute="leading" secondItem="6lD-uU-kQs" secondAttribute="leading" constant="10" id="Qa0-rt-ze2"/>
+                            <constraint firstItem="Kub-Fy-eBX" firstAttribute="top" secondItem="6lD-uU-kQs" secondAttribute="top" constant="10" id="c78-h6-n38"/>
+                            <constraint firstItem="gkE-vi-R18" firstAttribute="top" secondItem="Kub-Fy-eBX" secondAttribute="bottom" constant="134.5" id="oNb-ew-8Sa"/>
+                            <constraint firstItem="gkE-vi-R18" firstAttribute="centerX" secondItem="6lD-uU-kQs" secondAttribute="centerX" id="pXc-0q-KfO"/>
+                            <constraint firstItem="6lD-uU-kQs" firstAttribute="trailing" secondItem="Kub-Fy-eBX" secondAttribute="trailing" constant="10" id="vJW-cs-2El"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6lD-uU-kQs"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPassTextField" destination="vSw-kj-wtd" id="lmR-7d-bdg"/>
+                        <outlet property="emailTextField" destination="Bpr-XU-tg0" id="m68-pg-r7t"/>
+                        <outlet property="passwordTextField" destination="gIw-G2-7WS" id="1JE-W7-AU1"/>
+                        <outlet property="registerButton" destination="gkE-vi-R18" id="JhN-5L-Ddl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pR2-AS-gFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="127"/>
+        </scene>
+    </scenes>
+</document>
